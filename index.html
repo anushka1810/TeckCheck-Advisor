@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second-Hand Electronics Advisor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <button id="toggleSidebar" class="toggle-sidebar">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h1>TechCheck Advisor</h1>
+                <p>Your AI guide for second-hand electronics</p>
+                <button id="closeSidebar" class="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="sidebar-menu">
+                <button class="menu-item active" id="chatBtn">
+                    <i class="fas fa-comment"></i> Chat
+                </button>
+                <button class="menu-item" id="guideBtn">
+                    <i class="fas fa-book"></i> Buying Guide
+                </button>
+                <button class="menu-item" id="priceBtn">
+                    <i class="fas fa-tag"></i> Price Check
+                </button>
+                <button class="menu-item" id="checklistBtn">
+                    <i class="fas fa-clipboard-check"></i> Inspection Checklist
+                </button>
+                <button class="menu-item" id="compareBtn">
+                    <i class="fas fa-balance-scale"></i> Compare Refurbished
+                </button>
+            </div>
+            <div class="sidebar-footer">
+                <p>Created by Anushka Surya</p>
+                <p>ID: 12313315</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="chat-container" id="chatContainer">
+                <div class="welcome-message">
+                    <h2>Welcome to TechCheck Advisor!</h2>
+                    <p>I can help you evaluate second-hand electronics purchases. Ask me about:</p>
+                    <div class="quick-questions">
+                        <button class="quick-question">How to check iPhone battery health?</button>
+                        <button class="quick-question">Fair price for used MacBook Pro?</button>
+                        <button class="quick-question">Red flags in used electronics?</button>
+                        <button class="quick-question">Best places to buy refurbished devices?</button>
+                    </div>
+                </div>
+            </div>
+            <div class="prompt-area">
+                <div class="input-container">
+                    <input type="text" id="prompt" placeholder="Ask about second-hand electronics...">
+                    <button id="submitBtn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+                <div class="disclaimer">
+                    <p><i class="fas fa-info-circle"></i> Advice is AI-generated. Verify critical information.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
